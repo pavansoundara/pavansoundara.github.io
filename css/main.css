@@ -1,0 +1,304 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background: #d7d7d7;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+.pic-container {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+   display: block;
+}
+
+#pic{
+  width: 158px;
+  height: 158px;
+  display: block;
+  margin-top: 20px;
+  background: #fff;
+  margin: auto;
+  border-radius: 50%;
+  background: url(../img/pavan-soundara.png) 0 0 no-repeat;
+  border: 5px solid #1c1b1b;
+  position: relative;
+  z-index: 100;
+}
+
+
+
+.card-container {
+  width: 100%;
+  height: 410px;
+  margin-top: -90px;
+ display: block;
+ background: #1c1b1b;
+ position: relative;
+
+}
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+.name{
+  padding-top: 65px;
+    text-align: center;
+    color: #d7d7d7;
+    font-family: bebas neue, Helvetica, Arial;
+    font-size: 1.5em !important;
+    line-height: 0.8
+}
+
+.sub{
+  text-align: center;
+  color: #d7d7d7;
+  font-family: bebas neue, Helvetica, Arial;
+  font-size: 1em !important;
+  font-weight: bold;
+  margin-top: -23px;
+}
+
+.sub .dot{
+  color:#01849f;
+}
+
+.line{
+  width:95%;
+  height: 0.2px;
+  display: block;
+  background: #d7d7d7;
+  margin: auto;
+}
+
+.card-container p{
+  width: 95%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+      height: auto;
+      display: block;
+      color: #d7d7d7;
+      margin: auto;
+      font-size: 13pt;
+      font-family: oswald, Helvetica, Arial;
+      text-align: center;
+      line-height: 1.2em;
+      font-weight: 300;
+}
+
+.card-container a{
+  width:90%;
+  height: 40px;
+  display: block;
+  background: #01849f;
+  margin: auto;
+  margin-top:10px;
+  border:none;
+  border-radius: 2px;
+  box-shadow: 0px 2px 10px #000;
+  color:#d7d7d7;
+  font-family: bebas neue;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.card-container a:hover{
+  box-shadow: 0px 2px 2px #000;
+  background: #056376;
+
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+   .pic-container {
+       width: 60%;
+       height: auto;
+       padding-top: 30px;
+      display: block;
+      margin:auto;
+   }
+   .card-container {
+     border-radius: 5px;
+     box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.8);
+
+   }
+   .sub{
+     font-size: 1.2em !important;
+     padding-bottom: 6px;
+   }
+
+
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+   .pic-container {
+       width: 50%;
+       height: auto;
+       padding-top: 30px;
+      display: block;
+      margin:auto;
+   }
+   .card-container{
+     height: 420px;
+     box-shadow: 0px 10px 21px rgba(0, 0, 0, 0.8);
+   }
+   .card-container p{
+     font-size: 15pt;
+   }
+   .sub{
+     font-size: 1.4em !important;
+     padding-bottom: 6px;
+   }
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
